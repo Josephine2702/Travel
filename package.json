@@ -1,0 +1,21 @@
+{
+  "name": "travel",
+  "version": "1.0.0",
+  "description": "trevel website",
+  "main": "script.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "normalize-scss": "^7.0.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "node-sass": "^8.0.0",
+    "parcel": "^2.8.3"
+  }
+}

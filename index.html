@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/icons/planet-earth-svgrepo-com.svg">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./styles/global.scss">
+    <title>Travel</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header__container">
+        <div class="mobile-container">
+        <div class="logo-mobile"></div>
+        <nav class="navbar">
+            <button class="navbar-toggler">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav">
+                <div class="close"><img  src="./assets/icons/close.svg" alt="close"></div>
+                <div class="nav-container">
+              <li class="nav-item">
+                <a href="#">How It Works</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">Plan Your Trip</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">Destinations</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">Travel Stories</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">Account</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">Social Media</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+    </div>
+        <nav class="header__nav" >
+            <div class="nav-container">
+            <img class="header__logo" src="./assets/icons/logo.svg" alt="logo">
+            <ul class="header__list">
+                <li>
+                    <a class="header__list-item" href="#">How It Works</a>
+                </li>
+                <li>
+                    <a class="header__list-item" href="#">Plan Your Trip</a>
+                </li>
+                <li>
+                    <a class="header__list-item" href="#">Destinations</a>
+                </li>
+                <li>
+                    <a class="header__list-item" href="#">Travel Stories</a>
+                </li>
+            </ul>
+            <div class="header__btn-container btn">
+                <a href="#" id="login-btn">Login</a>
+            </div>
+        </div>
+        </nav>
+        <div class="start">
+           <div class="start__content">
+                <h1 class="start__title">Explore the beauty of the World</h1>
+           <div>
+                <p class="start__subtitle">Receive personalized recommendations for countries, hotels, activities and more</p>
+            </div>
+            <form class="start__plan-box">
+                <input class="start-input" type="text" id="input-text" name="input-text" placeholder="What would you like to do?">
+                <button class="btn-container btn btn-start" type="submit">Start Planning</button>
+              </form>
+        </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="steps-container">
+            <div><h2 class="subtitle">3 STEPS TO THE PERFECT TRIP</h2></div>
+            <div class="steps__content">
+                <div class="steps__item">
+                <div class="steps__item-inner step-item-left">
+                    <img src="./assets/icons/bicycle.svg" alt="">
+                </div>
+                <p class="text steps__item-text step-left">Tell us what you want to do</p>
+            </div>
+                <div class="steps__item step-item-center">
+                    <div class="steps__item-inner">
+                    <img src="./assets/icons/calendar.svg" alt="">
+                </div>
+                <p class="text steps__item-text">Share us preferable dates </p>
+                </div>
+                <div class="steps__item">
+                    <div class="steps__item-inner step-item-right">
+                    <img src="./assets//icons/plane.svg" alt="">
+                </div>
+                <p class="text steps__item-text step-right">We will give you recommendations</p>
+                </div>
+            </div>
+        </section>
+        <section class="popular-container">
+            <div><h2 class="subtitle">POPULAR DESTINATIONS</h2></div>    
+            
+            <div class="popular__slider">
+                <div class="popular__slider-mobile">
+                    <div class="popular__slider_mobile-wrapper">
+                    <div class="popular__slider_mobile-inner">
+                        <div class="popular__slide-mobile">
+                            <a href="#">
+                            <img src="./assets/images/slide-mob1.jpg" alt="Spain">
+                            <h3 class="slide-title-mobile">SPAIN</h3></a>
+                        </div>
+                        <div class="popular__slide-mobile">
+                            <a href="#">
+                            <img src="./assets/images/slide-mob2.jpg" alt="Japan">
+                            <h3 class="slide-title-mobile">JAPAN</h3></a>
+                        </div>
+                        <div class="popular__slide-mobile">
+                            <a href="#">
+                            <img src="./assets/images/slide-mob3.jpg" alt="USA">
+                            <h3 class="slide-title-mobile">USA</h3></a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            <div class="popular__slider-wrapper">
+                <div class="popular__slider-inner">
+                    <div class="popular__slide">
+                        <a href="#">
+                        <img src="./assets/images/sliderIsland1.jpg" alt="Spain">
+                        <h3 class="slide-title">SPAIN</h3></a>
+                    </div>
+                    <div class="popular__slide">
+                        <a href="#">
+                        <img src="./assets/images/sliderJapan2.jpg" alt="Japan">
+                        <h3 class="slide-title">JAPAN</h3></a>
+                    </div>
+                    <div class="popular__slide">
+                        <a href="#">
+                        <img src="./assets/images/sliderUsa3.jpg" alt="USA">
+                        <h3 class="slide-title">USA</h3></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-indicators">
+            <div data-slide-to="0" class="dot"></div>
+            <div data-slide-to="1" class="dot active"></div>
+            <div data-slide-to="2" class="dot next"></div>
+           </div>
+           <div class="btn-container btn">
+            <div><img class="btn-arrow" src="./assets/icons/arrowbtn.svg" alt=""></div>
+            <a href="#">Find More</a>
+        </div>
+        </section>
+        <section>
+            <div><h2 class="subtitle">TRAVEL STORIES</h2></div>
+            <div class="background-container">
+                <div class="background-fade">
+                <div class="stories-container">
+                    <div class="stories-item">
+                        <img class="stories-img" src="./assets/images/TS1.jpg" alt="">
+                        <div class="stories-mobile"><img src="./assets/images/mob1.jpg" alt=""></div>
+                        <div class="stories-content">
+                            <h4 class="stories-title">10 Photos of Attractive Thailand</h4>
+                        <div class="stories-text">
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...  <a href="#">Read More</a></p> 
+                        </div>
+                    </div>
+                    </div>
+                    <div class="stories-item">
+                        <div class="stories-mobile"><img src="./assets/images/mob2.jpg" alt=""></div>
+                        <img class="stories-img" src="./assets/images/TS2.jpg" alt="">
+                        <div class="stories-content">
+                        <h4 class="stories-title">10 Photos of Attractive Thailand</h4>
+                        <div class="stories-text">
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...  <a href="#">Read More</a></p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="stories-item">
+                        <div class="stories-mobile"><img src="./assets/images/mob3.jpg" alt=""></div>
+                        <img class="stories-img" src="./assets/images/TS3.jpg" alt="">
+                        <div class="stories-content">
+                        <h4 class="stories-title">10 Photos of Attractive Thailand</h4>
+                        <div class="stories-text">
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...  <a href="#">Read More</a></p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="stories-item">
+                        <div class="stories-mobile"><img src="./assets/images/mob4.jpg" alt=""></div>
+                        <img class="stories-img" src="./assets/images/TS4.jpg" alt="">
+                        <div class="stories-content">
+                        <h4 class="stories-title">10 Photos of Attractive Thailand</h4>
+                        <div class="stories-text">
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...  <a href="#">Read More</a></p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="btn-container stories-btn btn">
+                        <div><img class="btn-arrow" src="./assets/icons/arrowbtn.svg" alt=""></div>
+                        <a href="#">See More</a>
+                    </div>
+    </div>
+            </div>
+            <div class="footer">
+                <div><p>.</p></div>
+                <div class="footer-copyright">All Rights Reserved © Travel Portal</div>
+                <ul class="footer-media">
+                    <li>
+                        <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a></li>
+                    <li>
+                        <a href="#">
+                        <i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </section>
+    </main>
+  </div>
+  <div class="popup-overlay hide"></div>
+        <div class="login-popup-container popup hide">
+            <h3 class="popup-title">Log in to your account</h3>
+            <div class="login__form">
+                <div class="login__form-links">
+                    <div class="link-box facebook shape">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                            <span>Sign In with Facebook</span>
+                        </a>
+                    </div>
+                    
+                    <div class="link-box google shape">
+                        <a href="#">
+                <img class="google-icon" src="./assets/icons/logogoogleg48dp.svg" alt="">
+                             <p>Sign In with Google</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="line-box">
+                    <div class="line"></div>
+                    <div class="or">or</div>
+                    <div class="line left"></div>
+                </div>
+                    <form class="login-inputs">
+                        <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" class="login-input shape">
+                        <label for="password">Password</label>
+                            <input type="password" id="password" name="password" class="login-input shape">
+                        <button type="submit" class="popup-btn btn shape">Sign In</button>
+                        <a href="#">Forgot Your Password?</a>
+                    </form>
+                <div class="line-end"></div>
+            </div>
+            <a class="register" href="#">Don't have an account?<span>Register</span></a>
+        </div>
+        <div class="singup-popup-container popup hide">
+            <h3 class="popup-title sign-title">Create account</h3>
+            <div class="login__form">
+                    <form class="login-inputs">
+                        <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" class="login-input shape">
+                        <label for="password">Password</label>
+                            <input type="password" id="password" name="password" class="login-input shape">
+                        <button type="submit" class="popup-btn btn shape">Sign Up</button>
+                    </form>
+                <div class="line-end sign-line"></div>
+            </div>
+            <a class="register" id="login" href="#">Already have an account?<span>Log in</span></a>
+        </div>
+    
+          
+    <script src="script.js"></script>
+</body>
+</html>
