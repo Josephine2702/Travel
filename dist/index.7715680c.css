@@ -692,20 +692,11 @@ a {
   margin-bottom: 0;
 }
 
-.hide {
+.hide, .mobile-container {
   display: none;
 }
 
 @media (width >= 320px) and (width <= 395px) {
-  .header__container {
-    height: 251px;
-    background-image: url("bg-mobile.b9339845.jpg");
-  }
-
-  .header__btn-container, .start__content, .start__content h1, .start__content p, .stories-img {
-    display: none;
-  }
-
   .header__container {
     height: 251px;
     background-image: url("bg-mobile.b9339845.jpg");
@@ -800,6 +791,7 @@ a {
   .navbar-nav {
     width: 165px;
     height: 250px;
+    background-color: #f2785c;
     border-radius: 10px;
     margin: 0;
     padding: 0;
