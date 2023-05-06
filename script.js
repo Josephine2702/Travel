@@ -1,4 +1,5 @@
 const slidesWrapper = document.querySelector('.popular__slider-wrapper'),
+mobileSlider = document.querySelector('.popular__slider_mobile'),
     mobileWrapper = document.querySelector('.popular__slider_mobile-wrapper'),
     slidesField = document.querySelector('.popular__slider-inner'),
     slides = document.querySelectorAll('.popular__slide'),
@@ -6,7 +7,6 @@ const slidesWrapper = document.querySelector('.popular__slider-wrapper'),
     dots = document.querySelectorAll('.dot'),
     next = document.querySelector('.next'),
     width = window.getComputedStyle(slidesWrapper).width,
-    widthMobile = window.getComputedStyle(mobileWrapper).width,
     headerLoginBtn = document.querySelector('.header__btn-container'),
     overlay = document.querySelector('.popup-overlay'),
     logInPopup = document.querySelector('.login-popup-container'),
@@ -14,8 +14,8 @@ const slidesWrapper = document.querySelector('.popular__slider-wrapper'),
     register = document.querySelector('.register'),
     login = document.querySelector('#login');
 
-    console.log(widthMobile);
-    console.log(width);
+    
+   
 
 let slideIndex = 1;
 let offset = 0;
@@ -97,4 +97,37 @@ function showMenu() {
 
     navbarToggler.addEventListener("click", showMenu);
     close.addEventListener('click', closeMenu)
+
+
+
+
+
     
+
+const firstImg = mobileWrapper.querySelectorAll('img')[0],
+    arrowIcons = document.querySelectorAll('.fa-solid');
+
+    let firstImgWidth = firstImg.clientWidth + 14,
+    scrollWidth = mobileWrapper.scrollWidth - mobileWrapper.clientWidth;
+
+const showHideIcons = function() {
+    arrowIcons[0].style.opacity = mobileWrapper.scrollLeft == 0 ? '0.5': '1';
+    arrowIcons[1].style.opacity = mobileWrapper.scrollLeft == scrollWidth ? '0.5': '1';
+}
+
+arrowIcons.forEach(icon => {
+    icon.addEventListener('click', () => {
+        mobileWrapper.scrollLeft += icon.id == 'left' ? -firstImgWidth : firstImgWidth;
+        showHideIcons();
+    })
+})
+
+
+const dragging = function(e){
+
+console.log(e.pageX);
+}
+
+
+    
+mobileWrapper.addEventListener('mousemove', dragging);
